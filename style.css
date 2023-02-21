@@ -8,6 +8,55 @@ body {
     margin: 0;
 }
 
+body:hover{
+    animation-name:colorchange;
+    animation-duration:     2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    background-color:black;
+}
+
+@keyframes colorchange{
+    0%{
+        background-color:#ff0000;
+        ;
+    }
+    12.5%{
+        background-color:#ffa500;
+
+    }
+    25%{
+        background-color:#ffff00;
+        
+    }
+    37.5%{
+        background-color:#008000;
+        
+    }
+    50%{
+        background-color:#06D4E9;
+        
+
+    }
+    62.5%{
+        background-color:#0000ff;
+        
+    }
+    75%{
+        background-color:#4b0082;
+        
+
+    }
+    87.5%{
+        background-color:#ee82ee;
+    }
+    100%{
+    background-color: white;;
+    }
+
+
+}
+
 h1 {
     text-align: center;
     text-decoration: underline;
@@ -24,6 +73,19 @@ h1 {
 
 
 }
+#mypic:hover{
+    animation:rotation 1s infinite linear;
+    border-radius:80% ;
+
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
 
 .container {
     width: 50%;
